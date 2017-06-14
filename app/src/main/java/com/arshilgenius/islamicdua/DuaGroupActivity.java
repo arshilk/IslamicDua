@@ -13,6 +13,7 @@ import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -67,6 +68,8 @@ public class DuaGroupActivity extends AppCompatActivity implements
 
         getSupportLoaderManager().initLoader(0, null, this);
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

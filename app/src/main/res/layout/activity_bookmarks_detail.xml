@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root_dua_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,6 +34,14 @@
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
             android:scrollbars="vertical" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
 
         <View
             android:id="@+id/view_toolbar_shadow"

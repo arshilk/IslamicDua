@@ -18,6 +18,8 @@ import com.arshilgenius.islamicdua.adapter.BookmarksDetailAdapter;
 import com.arshilgenius.islamicdua.adapter.BookmarksDetailRecycleAdapter;
 import com.arshilgenius.islamicdua.loader.BookmarkDetailsLoader;
 import com.arshilgenius.islamicdua.model.Dua;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.List;
 
@@ -34,6 +36,8 @@ public class BookmarksDetailActivity extends AppCompatActivity
     private BookmarksDetailRecycleAdapter adapterRecycle;
     // private ListView recyclerView;
     private RecyclerView recyclerView;
+    private AdView mAdView;
+
 
     private Toolbar toolbar;
     private TextView my_toolbar_duaGroup_number;
@@ -43,6 +47,10 @@ public class BookmarksDetailActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bookmarks_detail);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         toolbar = (Toolbar) findViewById(R.id.my_detail_action_bar);
         my_toolbar_duaGroup_number = (TextView) findViewById(R.id.txtReference_duaDetail);
