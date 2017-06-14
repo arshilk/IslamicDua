@@ -2,14 +2,15 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion '25.0.0'
 
     compileOptions {
         encoding "UTF-8"
     }
 
     defaultConfig {
-        applicationId "com.khalid.hisnulmuslim"
+        applicationId "com.arshilgenius.islamicdua" +
+                ""
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1

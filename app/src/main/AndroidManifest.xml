@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.khalid.hisnulmuslim"
+    package="com.android.arshilgenius.islamicdua"
     android:versionCode="1"
     android:versionName="@string/version_name">
 
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.khalid.hisnulmuslim.DuaGroupActivity"
+            android:name="com.arshilgenius.islamicdua.DuaGroupActivity"
             android:label="@string/title_activity_dua_list"
             android:launchMode="singleTop">
             <intent-filter>
@@ -27,31 +27,31 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name="com.khalid.hisnulmuslim.DuaDetailActivity"
+            android:name="com.arshilgenius.islamicdua.DuaDetailActivity"
             android:label="@string/title_activity_dua_detail"
-            android:parentActivityName="com.khalid.hisnulmuslim.DuaGroupActivity"></activity>
+            android:parentActivityName="com.arshilgenius.islamicdua.DuaGroupActivity"></activity>
         <activity
-            android:name="com.khalid.hisnulmuslim.AboutActivity"
+            android:name="com.arshilgenius.islamicdua.AboutActivity"
             android:label="@string/title_activity_about"
-            android:parentActivityName="com.khalid.hisnulmuslim.DuaGroupActivity">
+            android:parentActivityName="com.arshilgenius.islamicdua.DuaGroupActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.khalid.hisnulmuslim.DuaGroupActivity" />
+                android:value="com.arshilgenius.islamicdua.DuaGroupActivity" />
         </activity>
         <activity
-            android:name="com.khalid.hisnulmuslim.BookmarksGroupActivity"
+            android:name="com.arshilgenius.islamicdua.BookmarksGroupActivity"
             android:label="@string/title_activity_bookmarks"
-            android:parentActivityName="com.khalid.hisnulmuslim.DuaGroupActivity">
+            android:parentActivityName="com.arshilgenius.islamicdua.DuaGroupActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.khalid.hisnulmuslim.DuaGroupActivity" />
+                android:value="com.arshilgenius.islamicdua.DuaGroupActivity" />
         </activity>
         <activity
-            android:name="com.khalid.hisnulmuslim.BookmarksDetailActivity"
+            android:name="com.arshilgenius.islamicdua.BookmarksDetailActivity"
             android:label="@string/title_activity_dua_detail"
-            android:parentActivityName="com.khalid.hisnulmuslim.BookmarksGroupActivity"></activity>
+            android:parentActivityName="com.arshilgenius.islamicdua.BookmarksGroupActivity"></activity>
         <activity
-            android:name="com.khalid.hisnulmuslim.PreferencesActivity"
+            android:name="com.arshilgenius.islamicdua.PreferencesActivity"
             android:label="@string/title_activity_preferences"></activity>
     </application>
 </manifest>
