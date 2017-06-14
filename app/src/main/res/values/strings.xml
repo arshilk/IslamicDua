@@ -34,5 +34,6 @@
     <string name="snackbar_text_end">" from bookmarks"</string>
     <string name="snackbar_action">undo</string>
     <string name="banner_ad_unit_id">ca-app-pub-9964770818419897/2343636903</string>
+    <string name="developer_arshil_khan">Developer : Arshil Khan</string>
 
 </resources>

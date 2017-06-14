@@ -17,6 +17,8 @@ import com.android.arshilgenius.islamicdua.R;
 import com.arshilgenius.islamicdua.adapter.DuaDetailAdapter;
 import com.arshilgenius.islamicdua.loader.DuaDetailsLoader;
 import com.arshilgenius.islamicdua.model.Dua;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.List;
 
@@ -29,6 +31,8 @@ public class DuaDetailActivity extends AppCompatActivity
     private String duaTitleFromDuaListActivity;
     private DuaDetailAdapter adapter;
     private ListView listView;
+    private AdView mAdView;
+
 
     private Toolbar toolbar;
     private TextView my_toolbar_duaGroup_number;
@@ -38,6 +42,10 @@ public class DuaDetailActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dua_detail);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         toolbar = (Toolbar) findViewById(R.id.my_detail_action_bar);
         my_toolbar_duaGroup_number = (TextView) findViewById(R.id.txtReference_duaDetail);

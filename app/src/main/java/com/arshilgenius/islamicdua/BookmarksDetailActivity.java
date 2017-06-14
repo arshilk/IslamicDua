@@ -26,7 +26,7 @@ import java.util.List;
 import me.grantland.widget.AutofitTextView;
 
 /**
- * Created by Khalid on 31 يوليو.
+ * Created by arshil on 31 يوليو.
  */
 public class BookmarksDetailActivity extends AppCompatActivity
         implements LoaderManager.LoaderCallbacks<List<Dua>> {
@@ -36,7 +36,6 @@ public class BookmarksDetailActivity extends AppCompatActivity
     private BookmarksDetailRecycleAdapter adapterRecycle;
     // private ListView recyclerView;
     private RecyclerView recyclerView;
-    private AdView mAdView;
 
 
     private Toolbar toolbar;
@@ -47,6 +46,7 @@ public class BookmarksDetailActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bookmarks_detail);
+
 
 
         toolbar = (Toolbar) findViewById(R.id.my_detail_action_bar);

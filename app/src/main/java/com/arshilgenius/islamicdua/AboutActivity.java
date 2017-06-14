@@ -12,15 +12,23 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.android.arshilgenius.islamicdua.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class AboutActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private AdView mAdView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         toolbar = (Toolbar) findViewById(R.id.my_action_bar);
         View mToolbarShadow = findViewById(R.id.view_toolbar_shadow);

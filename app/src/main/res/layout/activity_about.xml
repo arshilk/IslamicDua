@@ -25,12 +25,6 @@
                 android:orientation="vertical"
                 android:paddingTop="10dp">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/about_icon" />
-
                 <TextView
                     android:id="@+id/tvAppName"
                     android:layout_width="match_parent"
@@ -56,9 +50,18 @@
                     android:padding="10sp"
                     android:scrollbarAlwaysDrawVerticalTrack="true"
                     android:scrollbars="vertical"
-                    android:singleLine="false"
-                    android:text="Developer : Arshil Khan"
+                    android:text="@string/developer_arshil_khan"
                     android:textSize="16sp" />
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ads:adSize="BANNER"
+                    android:layout_alignParentBottom="true"
+                    ads:adUnitId="@string/banner_ad_unit_id">
+
+                </com.google.android.gms.ads.AdView>
             </LinearLayout>
 
 

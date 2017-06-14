@@ -17,6 +17,8 @@ import com.android.arshilgenius.islamicdua.R;
 import com.arshilgenius.islamicdua.adapter.BookmarksGroupAdapter;
 import com.arshilgenius.islamicdua.loader.BookmarkGroupLoader;
 import com.arshilgenius.islamicdua.model.Dua;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.List;
 
@@ -27,10 +29,13 @@ public class BookmarksGroupActivity extends AppCompatActivity implements
     private ListView mListView;
     private Toolbar toolbar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bookmarks_group);
+
+
 
         toolbar = (Toolbar) findViewById(R.id.my_action_bar);
         View mToolbarShadow = findViewById(R.id.view_toolbar_shadow);
