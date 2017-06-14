@@ -49,7 +49,6 @@ public class BookmarksDetailActivity extends AppCompatActivity
         setContentView(R.layout.activity_bookmarks_detail);
 
 
-
         toolbar = (Toolbar) findViewById(R.id.my_detail_action_bar);
         my_toolbar_duaGroup_number = (TextView) findViewById(R.id.txtReference_duaDetail);
         my_autofit_toolbar_title = (AutofitTextView) findViewById(R.id.dua_detail_autofit_actionbar_title);
@@ -84,7 +83,7 @@ public class BookmarksDetailActivity extends AppCompatActivity
     @Override
     public void onLoadFinished(Loader<List<Dua>> loader, List<Dua> data) {
         if (adapterRecycle == null) {
-        // adapterRecycle = new BookmarksDetailRecycleAdapter(this, data, duaTitleFromDuaListActivity);
+            // adapterRecycle = new BookmarksDetailRecycleAdapter(this, data, duaTitleFromDuaListActivity);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
             adapterRecycle = new BookmarksDetailRecycleAdapter(this, data, duaTitleFromDuaListActivity);
             recyclerView.setAdapter(adapterRecycle);

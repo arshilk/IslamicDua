@@ -38,9 +38,6 @@ public class DuaGroupActivity extends AppCompatActivity implements
     private AdView mAdView;
 
 
-
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dua_group);
@@ -48,7 +45,6 @@ public class DuaGroupActivity extends AppCompatActivity implements
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-
 
 
         toolbar = (Toolbar) findViewById(R.id.my_action_bar);
@@ -80,10 +76,8 @@ public class DuaGroupActivity extends AppCompatActivity implements
         }
 
 
-
         getSupportLoaderManager().initLoader(0, null, this);
     }
-
 
 
     @Override
@@ -139,7 +133,7 @@ public class DuaGroupActivity extends AppCompatActivity implements
     @Override
     public void onLoadFinished(Loader<List<Dua>> loader, List<Dua> data) {
         if (mAdapter == null) {
-            mAdapter = new DuaGroupAdapter(this,data);
+            mAdapter = new DuaGroupAdapter(this, data);
             mListView.setAdapter(mAdapter);
         } else {
             mAdapter.setData(data);

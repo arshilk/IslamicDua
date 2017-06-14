@@ -28,7 +28,6 @@ import com.mikepenz.iconics.view.IconicsButton;
 import java.util.List;
 
 
-
 // Class blueprint taken from: http://hmkcode.com/android-simple-recyclerview-widget-example/
 public class BookmarksDetailRecycleAdapter extends RecyclerView.Adapter<BookmarksDetailRecycleAdapter.ViewHolder> {
     private static Typeface sCachedTypeface = null;
@@ -84,7 +83,7 @@ public class BookmarksDetailRecycleAdapter extends RecyclerView.Adapter<Bookmark
         return mHolder;
     }
 
-    public void deleteRow(int position){
+    public void deleteRow(int position) {
         mDuaData.remove(position); // this will remove row of data
         notifyItemRemoved(position); // this will do the animation of removal
         notifyItemRangeChanged(position, mDuaData.size()); // From GreenTech email
@@ -98,7 +97,7 @@ public class BookmarksDetailRecycleAdapter extends RecyclerView.Adapter<Bookmark
 
     // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(ViewHolder mHolder, int position){//final RecyclerView rv) {
+    public void onBindViewHolder(ViewHolder mHolder, int position) {//final RecyclerView rv) {
         // - get data from your itemsData at this position
         // - replace the contents of the view with that itemsData
         final int finalPosition = position;

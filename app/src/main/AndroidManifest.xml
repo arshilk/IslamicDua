@@ -29,7 +29,7 @@
         <activity
             android:name="com.arshilgenius.islamicdua.DuaDetailActivity"
             android:label="@string/title_activity_dua_detail"
-            android:parentActivityName="com.arshilgenius.islamicdua.DuaGroupActivity"></activity>
+            android:parentActivityName="com.arshilgenius.islamicdua.DuaGroupActivity" />
         <activity
             android:name="com.arshilgenius.islamicdua.AboutActivity"
             android:label="@string/title_activity_about"
@@ -49,9 +49,10 @@
         <activity
             android:name="com.arshilgenius.islamicdua.BookmarksDetailActivity"
             android:label="@string/title_activity_dua_detail"
-            android:parentActivityName="com.arshilgenius.islamicdua.BookmarksGroupActivity"></activity>
+            android:parentActivityName="com.arshilgenius.islamicdua.BookmarksGroupActivity" />
         <activity
             android:name="com.arshilgenius.islamicdua.PreferencesActivity"
-            android:label="@string/title_activity_preferences"></activity>
+            android:label="@string/title_activity_preferences" />
     </application>
+
 </manifest>

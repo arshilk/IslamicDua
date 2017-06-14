@@ -16,6 +16,7 @@ public class DuaGroupLoader extends AbstractQueryLoader<List<Dua>> {
     public DuaGroupLoader(Context context) {
         super(context);
     }
+
     public Locale deviceLocale;
     public String groupTitleLanguage;
 

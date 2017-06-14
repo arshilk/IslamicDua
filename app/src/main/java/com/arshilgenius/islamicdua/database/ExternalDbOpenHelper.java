@@ -46,7 +46,7 @@ public class ExternalDbOpenHelper extends SQLiteOpenHelper {
         openDataBase();
     }
 
-    public ExternalDbOpenHelper(Context context){
+    public ExternalDbOpenHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
 
@@ -124,8 +124,12 @@ public class ExternalDbOpenHelper extends SQLiteOpenHelper {
         }
         super.close();
     }
+
     @Override
-    public void onCreate(SQLiteDatabase db) {}
+    public void onCreate(SQLiteDatabase db) {
+    }
+
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {}
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+    }
 }

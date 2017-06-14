@@ -31,7 +31,7 @@ public class BookmarkDetailsLoader extends AbstractQueryLoader<List<Dua>> {
                             HisnDatabaseInfo.DuaTable.ENGLISH_TRANSLATION,
                             HisnDatabaseInfo.DuaTable.ENGLISH_REFERENCE},
                     HisnDatabaseInfo.DuaTable.GROUP_ID + "=" + mGroup
-                    + " AND " + HisnDatabaseInfo.DuaTable.FAV + "= 1"
+                            + " AND " + HisnDatabaseInfo.DuaTable.FAV + "= 1"
                     ,
                     null, null, null, null);
             results = new ArrayList<>();

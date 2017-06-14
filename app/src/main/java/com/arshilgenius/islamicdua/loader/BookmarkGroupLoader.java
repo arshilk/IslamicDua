@@ -30,7 +30,7 @@ public class BookmarkGroupLoader extends AbstractQueryLoader<List<Dua>> {
                     "IN " +
                     "(SELECT group_id " +
                     "FROM dua " +
-                    "WHERE fav=?)",new String[]{"1"});
+                    "WHERE fav=?)", new String[]{"1"});
 
             if (duaGroupCursor != null && duaGroupCursor.moveToFirst()) {
                 results = new ArrayList<>();

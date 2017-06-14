@@ -75,7 +75,7 @@ public class BookmarksDetailAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
-    public void deleteRow(int position){
+    public void deleteRow(int position) {
         mList.remove(position); // this will remove row of data
         notifyDataSetChanged();
         //notifyItemRemoved(position); // this will do the animation of removal
@@ -200,8 +200,7 @@ public class BookmarksDetailAdapter extends BaseAdapter {
                         }
                         p.setFav(isFav);
                     }
-                    if (getCount() == 0)
-                    {
+                    if (getCount() == 0) {
 
                     }
                 }

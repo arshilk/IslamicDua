@@ -139,11 +139,7 @@ public class DuaGroupAdapter extends BaseAdapter implements Filterable {
         return convertView;
 
 
-
-
     }
-
-
 
 
     public static class ViewHolder {
