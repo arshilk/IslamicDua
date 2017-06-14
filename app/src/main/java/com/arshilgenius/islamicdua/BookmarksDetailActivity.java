@@ -48,9 +48,7 @@ public class BookmarksDetailActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bookmarks_detail);
 
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+
 
         toolbar = (Toolbar) findViewById(R.id.my_detail_action_bar);
         my_toolbar_duaGroup_number = (TextView) findViewById(R.id.txtReference_duaDetail);

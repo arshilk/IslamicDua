@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.GradientDrawable;
+import android.support.v7.widget.RecyclerView;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.view.LayoutInflater;
@@ -28,6 +29,7 @@ public class DuaGroupAdapter extends BaseAdapter implements Filterable {
     private LayoutInflater mInflater;
     private List<Dua> mList;
     private CharSequence mSearchText = "";
+
 
     public DuaGroupAdapter(Context context, List<Dua> list) {
         mContext = context;
@@ -135,7 +137,14 @@ public class DuaGroupAdapter extends BaseAdapter implements Filterable {
             }
         }
         return convertView;
+
+
+
+
     }
+
+
+
 
     public static class ViewHolder {
         TextView tvDuaName;

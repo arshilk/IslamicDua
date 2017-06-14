@@ -23,6 +23,9 @@ import com.android.arshilgenius.islamicdua.R;
 import com.arshilgenius.islamicdua.adapter.DuaGroupAdapter;
 import com.arshilgenius.islamicdua.loader.DuaGroupLoader;
 import com.arshilgenius.islamicdua.model.Dua;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.List;
 
@@ -31,10 +34,22 @@ public class DuaGroupActivity extends AppCompatActivity implements
     private DuaGroupAdapter mAdapter;
     private ListView mListView;
     private Toolbar toolbar;
+    private InterstitialAd mInterstitialAd;
+    private AdView mAdView;
+
+
+
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dua_group);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
 
         toolbar = (Toolbar) findViewById(R.id.my_action_bar);
         View mToolbarShadow = findViewById(R.id.view_toolbar_shadow);
